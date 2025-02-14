@@ -25,7 +25,7 @@ int SelectSort(long long int a[], int n){
             C++;
             if (a[k] > a[j]){
                 k=j;}}
-        M++;
+        M=M+3;
         int p = a[i];
         a[i]=a[k];
         a[k]=p;}
@@ -40,7 +40,7 @@ int SelectSort2(long long int a[], int n){
             if (a[k] > a[j]){
                 k=j;}}
         if (i!=k){
-            M++;
+            M=M+3;
             int p = a[i];
             a[i]=a[k];
             a[k]=p;}}
