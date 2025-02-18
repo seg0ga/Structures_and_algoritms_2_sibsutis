@@ -54,8 +54,8 @@ void PrintMas(long long int a[], int n){
 int main(){
     int n1=10,n2=100,i1,i2,i3,i4,i5,i6,u1,u2,u3,u4,u5,u6;
     long long int a1[n1],a2[n2];
-    int teor1=((10-1))+(10*10-10)/2;
-    int teor2=((100-1))+(100*100-100)/2;
+    int teor1=(3*(10-1))+(10*10-10)/2;
+    int teor2=(3*(100-1))+(100*100-100)/2;
     FillInc(a1,n1);
     i1 = SelectSort(a1,n1);
     FillInc(a1,n1);
