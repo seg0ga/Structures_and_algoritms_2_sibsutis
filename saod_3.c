@@ -20,13 +20,13 @@ void FillRand(long long int a[], int n){
 int BubbleSort(long long int a[],int n){
     int M=0,C=0;
     for (int i=0;i<n-1;i++){
-        for (int j=0;j<n-i-1;j++){
+        for (int j=1;j<n-i;j++){
             C++;
-            if (a[j]>a[j+1]){
+            if (a[j]<a[j-1]){
                 M=M+3;
-                int t = a[i];
-                a[i]=a[j];
-                a[j]=t;}}}return M+C;}
+                int t = a[j];
+                a[j]=a[j-1];
+                a[j-1]=t;}}}return M+C;}
 
 void PrintMas(long long int a[], int n){
     for (int i=0;i<n;i++){
